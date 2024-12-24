@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Quiz para Potterheads</title>
+        <meta name = "description" content = "Um quiz interativo pra testarmos o seu conhecimento de Harry Potter">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/harry-potter');
+            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #f4f0ea;
+                font-family: "Cabin", serif;
+                font-weight: 400;
+            }
+            header{
+                padding: 2rem;
+                background-color: #3b1c03;
+                text-align: center;
+            }
+            h1{
+                color: #d96608;
+                font-size: 50px;
+                font-family: 'Harry Potter', sans-serif;
+                font-weight: 400;
+            }
+            h2{
+                color: #9a4a08;
+                font-size: 1.2rem;
+            }
+            header p{
+                color: #d96608;
+            }
+            main{
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            input[type="radio"]{
+                accent-color: #9a4a08;
+            }
+            a{
+                color: #9a4a08;
+                text-decoration: none;
+                text-decoration: underline;
+            }
+            .final{
+                color: black;
+                font-size: 16px;
+                font-weight: 100;
+            }
+            footer{
+                padding: 1.3rem 2rem 2rem 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Quiz mágico para Potterheads</h1>
+            <p>Teste seu conhecimento do mundo Bruxo e veja o quão Potterhead você é!</p>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p>Este quiz foi desenvolvido para <strong>testar seus conhecimentos</strong> do mundo bruxo, como Hogwarts, famílias bruxas e mais!</p>
+                <p>Serão 15 perguntas de <abbr title="A, B, C e D"><em>múltipla escolha.</em></abbr><br>
+                Desafie-se com esse quiz!</p>
+            </section>
+            <!--Pergunta 1-->
+            <section>
+                <h2>Pergunta 1: Qual o nome da escola onde Harry Potter estudou?</h2>
+                <form>
+                    <input type="radio" value="a) Beauxbatons" name="pergunta1" id="p1a">
+                    <label for="p1a">a) Beauxbatons</label><br>
+                    <input type="radio" value="b) Durmstrang" name="pergunta1" id="p1b">
+                    <label for="p1b">b) Durmstrang</label><br>
+                    <input type="radio" value="c) Hogwarts" name="pergunta1" id="p1c">
+                    <label for="p1c">c) Hogwarts</label><br>
+                    <input type="radio" value="d) Ilvermorny" name="pergunta1"
+                    id="p1d">
+                    <label for="p1d">d) Ilvermorny</label><br>
+                </form>
+            </section>
+            <!--Pergunta 2-->
+            <section>
+                <h2>Pergunta 2: Qual é o nome do torneio de magia entre escolas de bruxaria?</h2>
+                <form>
+                    <input type="radio" value="a) Torneio Tribruxo" name="pergunta2" id="p2a">
+                    <label for="p2a">a) Torneio Tribruxo</label><br>
+                    <input type="radio" value="b) Copa das Casas" name="pergunta2" id="p2b">
+                    <label for="p2b">b) Copa das Casas</label><br>
+                    <input type="radio" value="c) Jogos Quânticos" name="pergunta2" id="p2c">
+                    <label for="p2c">c) Jogos Quânticos</label><br>
+                    <input type="radio" value="d) Desafio dos Três Magos" name="pergunta2"
+                    id="p2d">
+                    <label for="p2d">d) Desafio dos Três Magos</label><br>
+                </form>
+            </section>
+            <!--Pergunta 3-->
+            <section>
+                <h2>Pergunta 3: Qual é o nome da mãe de Sirius Black?</h2>
+                <form>
+                    <input type="radio" value="a) Walburga Black" name="pergunta3" id="p3a">
+                    <label for="p3a">a) Walburga Black</label><br>
+                    <input type="radio" value="b) Narcisa Malfoy" name="pergunta3" id="p3b">
+                    <label for="p3b">b) Narcisa Malfoy</label><br>
+                    <input type="radio" value="c) Andromeda Black" name="pergunta3" id="p3c">
+                    <label for="p3c">c) Andromeda Black</label><br>
+                    <input type="radio" value="d) Bellatrix Lestrange" name="pergunta3"
+                    id="p3d">
+                    <label for="p3d">d) Bellatrix Lestrange</label><br>
+                </form>
+            </section>
+            <!--Pergunta 4-->
+            <section>
+                <h2>Pergunta 4: Quem foi o diretor da Escola de Magia Durmstrang?</h2>
+                <form>
+                    <input type="radio" value="a) Gellert Karkaroff" name="pergunta4" id="p4a">
+                    <label for="p4a">a) Gellert Karkaroff</label><br>
+                    <input type="radio" value="b) Victor Karkaroff" name="pergunta4" id="p4b">
+                    <label for="p4b">b) Victor Karkaroff</label><br>
+                    <input type="radio" value="c) Salazar Slytherin" name="pergunta4" id="p4c">
+                    <label for="p4c">c) Salazar Slytherin</label><br>
+                    <input type="radio" value="d) Igor Karkaroff" name="pergunta4"
+                    id="p4d">
+                    <label for="p4d">d) Igor Karkaroff</label><br>
+                </form>
+            </section>
+            <!--Pergunta 5-->
+            <section>
+                <h2>Pergunta 5: Qual é o nome da esposa de Arthur Weasley?</h2>
+                <form>
+                    <input type="radio" value="a) Ginny Weasley" name="pergunta5" id="p5a">
+                    <label for="p5a">a) Ginny Weasley</label><br>
+                    <input type="radio" value="b) Molly Weasley" name="pergunta5" id="p5b">
+                    <label for="p5b">b) Molly Weasley</label><br>
+                    <input type="radio" value="c) Hermione Granger" name="pergunta5" id="p5c">
+                    <label for="p5c">c) Hermione Granger</label><br>
+                    <input type="radio" value="d) Bellatrix Lestrange" name="pergunta5"
+                    id="p5d">
+                    <label for="p5d">d) Bellatrix Lestrange</label><br>
+                </form>
+            </section>
+            <!--Pergunta 6-->
+            <section>
+                <h2>Pergunta 6: Qual é o nome do dragão que Harry Potter enfrenta durante o Torneio Tribruxo?</h2>
+                <form>
+                    <input type="radio" value="a) Verde-Galês Comum" name="pergunta6" id="p6a">
+                    <label for="p6a">a) Verde-Galês Comum</label><br>
+                    <input type="radio" value="b) Norberto" name="pergunta6" id="p6b">
+                    <label for="p6b">b) Norberto</label><br>
+                    <input type="radio" value="c) Rabo-Córneo Húngaro" name="pergunta6" id="p6c">
+                    <label for="p6c">c) Rabo-Córneo Húngaro</label><br>
+                    <input type="radio" value="d) Meteoro-Chinês" name="pergunta6"
+                    id="p6d">
+                    <label for="p6d">d) Meteoro-Chinês</label><br>
+                </form>
+            </section>
+            <!--Pergunta 7-->
+            <section>
+                <h2>Pergunta 7: O que é a Horcrux de Tom Riddle, escondida na Caverna de Cristal?</h2>
+                <form>
+                    <input type="radio" value="a) A taça de Hufflepuff" name="pergunta7" id="p7a">
+                    <label for="p7a">a) A taça de Hufflepuff</label><br>
+                    <input type="radio" value="b) O diadema de Rowena Ravenclaw" name="pergunta7" id="p7b">
+                    <label for="p7b">b) O diadema de Rowena Ravenclaw</label><br>
+                    <input type="radio" value="c) O medalhão de Salazar Slytherin" name="pergunta7" id="p7c">
+                    <label for="p7c">c) O medalhão de Salazar Slytherin</label><br>
+                    <input type="radio" value="d) A espada de Gryffindor" name="pergunta7"
+                    id="p7d">
+                    <label for="p7d">d) A espada de Gryffindor</label><br>
+                </form>
+            </section>
+            <!--Pergunta 8-->
+            <section>
+                <h2>Pergunta 8: A qual família a elfa Winky servia?</h2>
+                <form>
+                    <input type="radio" value="a) Família Weasley" name="pergunta8" id="p8a">
+                    <label for="p8a">a) Família Weasley</label><br>
+                    <input type="radio" value="b) Família Black" name="pergunta8" id="p8b">
+                    <label for="p8b">b) Família Black</label><br>
+                    <input type="radio" value="c) Família Carrow" name="pergunta8" id="p8c">
+                    <label for="p8c">c) Família Carrow</label><br>
+                    <input type="radio" value="d) Família Crouch" name="pergunta8"
+                    id="p8d">
+                    <label for="p8d">d) Família Crouch</label><br>
+                </form>
+            </section>
+            <!--Pergunta 9-->
+            <section>
+                <h2>Pergunta 9: Em qual ano do Torneio Tribruxo Harry compete contra outros estudantes?</h2>
+                <form>
+                    <input type="radio" value="a) 6º ano" name="pergunta9" id="p9a">
+                    <label for="p9a">a) 6º ano</label><br>
+                    <input type="radio" value="b) 7º ano" name="pergunta9" id="p9b">
+                    <label for="p9b">b) 7º ano</label><br>
+                    <input type="radio" value="c) 5º ano" name="pergunta9" id="p9c">
+                    <label for="p9c">c) 5º ano</label><br>
+                    <input type="radio" value="d) 4º ano" name="pergunta9"
+                    id="p9d">
+                    <label for="p9d">d) 4º ano</label><br>
+                </form>
+            </section>
+            <!--Pergunta 10-->
+            <section>
+                <h2>Pergunta 10: Qual o nome do cão de três cabeças que protegia a pedra filosofal?</h2>
+                <form>
+                    <input type="radio" value="a) Bob" name="pergunta10" id="p10a">
+                    <label for="p10a">a) Bob</label><br>
+                    <input type="radio" value="b) Fofo" name="pergunta10" id="p10b">
+                    <label for="p10b">b) Fofo</label><br>
+                    <input type="radio" value="c) pelúcio" name="pergunta10" id="p10c">
+                    <label for="p10c">c) pelúcio</label><br>
+                    <input type="radio" value="d) Rabicho" name="pergunta10"
+                    id="p10d">
+                    <label for="p10d">d) Rabicho</label><br>
+                </form>
+            </section>
+            <!--Pergunta 11-->
+            <section>
+                <h2>Pergunta 11: Qual é o nome do livro que ensina a criar Horcruxes?</h2>
+                <form>
+                    <input type="radio" value="a) Os Contos de Beedle o Bardo " name="pergunta11" id="p11a">
+                    <label for="p11a">a) Os Contos de Beedle o Bardo </label><br>
+                    <input type="radio" value="b) Hogwarts: Uma história" name="pergunta11" id="p11b">
+                    <label for="p11b">b) Hogwarts: Uma história</label><br>
+                    <input type="radio" value="c) As Relíquias da Morte" name="pergunta11" id="p11c">
+                    <label for="p11c">c) As Relíquias da Morte</label><br>
+                    <input type="radio" value="d) O livro Segredos das Artes Mais Tenebrosas" name="pergunta11"
+                    id="p11d">
+                    <label for="p11d">d) O livro Segredos das Artes Mais Tenebrosas</label><br>
+                </form>
+            </section>
+            <!--Pergunta 12-->
+            <section>
+                <h2>Pergunta 12: Qual é o nome do jogo de xadrez mágico que Harry e seus amigos jogaram?</h2>
+                <form>
+                    <input type="radio" value="a) Xadrez Gigante de Hogwarts" name="pergunta12" id="p12a">
+                    <label for="p12a">a) Xadrez Gigante de Hogwarts</label><br>
+                    <input type="radio" value="b) Xadrez de Bruxo" name="pergunta12" id="p12b">
+                    <label for="p12b">b) Xadrez de Bruxo</label><br>
+                    <input type="radio" value="c) Xadrez Animado" name="pergunta12" id="p12c">
+                    <label for="p12c">c) Xadrez Animado</label><br>
+                    <input type="radio" value="d) Xadrez Vivo" name="pergunta12"
+                    id="p12d">
+                    <label for="p12d">d) Xadrez Vivo</label><br>
+                </form>
+            </section>
+            <!--Pergunta 13-->
+            <section>
+                <h2>Pergunta 13: Qual é o nome da poção que permite que um bruxo assuma a aparência de outra pessoa?</h2>
+                <form>
+                    <input type="radio" value="a) Poção wiggenweld" name="pergunta13" id="p13a">
+                    <label for="p13a">a) Poção wiggenweld</label><br>
+                    <input type="radio" value="b) Poção fadicida" name="pergunta13" id="p13b">
+                    <label for="p13b">b) Poção fadicida</label><br>
+                    <input type="radio" value="c) Poção volubilis" name="pergunta13" id="p13c">
+                    <label for="p13c">c) Poção volubilis</label><br>
+                    <input type="radio" value="d) Poção Polissuco" name="pergunta13"
+                    id="p13d">
+                    <label for="p13d">d) Poção Polissuco</label><br>
+                </form>
+            </section>
+            <!--Pergunta 14-->
+            <section>
+                <h2>Pergunta 14: Qual é o nome do animal que puxa a carruagem de Harry Potter para Hogwarts?</h2>
+                <form>
+                    <input type="radio" value="a) Hipogrifo" name="pergunta14" id="p14a">
+                    <label for="p14a">a) Hipogrifo</label><br>
+                    <input type="radio" value="b) Unicórnio" name="pergunta14" id="p14b">
+                    <label for="p14b">b) Unicórnio</label><br>
+                    <input type="radio" value="c) Testrálio " name="pergunta14" id="p14c">
+                    <label for="p14c">c) Testrálio </label><br>
+                    <input type="radio" value="d) Fênix" name="pergunta14"
+                    id="p14d">
+                    <label for="p14d">d) Fênix</label><br>
+                </form>
+            </section>
+            <!--Pergunta 15-->
+            <section>
+                <h2>Pergunta 15: Qual é o nome do feitiço que faz objetos pegarem fogo?</h2>
+                <form>
+                    <input type="radio" value="a) Incendio" name="pergunta15" id="p15a">
+                    <label for="p15a">a) Incendio</label><br>
+                    <input type="radio" value="b) Confringo" name="pergunta15" id="p15b">
+                    <label for="p15b">b) Confringo</label><br>
+                    <input type="radio" value="c) Stupefy " name="pergunta15" id="p15c">
+                    <label for="p15c">c) Stupefy </label><br>
+                    <input type="radio" value="d) Expelliarmus" name="pergunta15"
+                    id="p15d">
+                    <label for="p15d">d) Expelliarmus</label><br>
+                </form>
+            </section>
+            <section>
+                <h2>Parabéns! Você concluiu o quiz!<h2>
+                <p class="final">Para olhar o gabarito e ver quantos acertos você fez <a href="gabarito.html">clique aqui</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy Quiz para Potterheads. Todos direitos reservados</p>
+        </footer>
+    </body>
+</html>
